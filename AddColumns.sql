@@ -27,3 +27,8 @@ WHERE CustomerId = 2;
 UPDATE CustomerInfo.Customer
 SET Country = 'UK', Salary = 6000.00, Pincode = '45678'
 WHERE CustomerId = 3;
+
+-- Update customer details based on customer name
+UPDATE CustomerInfo.Customer
+SET Phone = '1112223333', Address = 'New Address'
+WHERE CustomerName = 'Rahul';
