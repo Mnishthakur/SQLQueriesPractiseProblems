@@ -32,3 +32,8 @@ WHERE CustomerId = 3;
 UPDATE CustomerInfo.Customer
 SET Phone = '1112223333', Address = 'New Address'
 WHERE CustomerName = 'Rahul';
+
+-- Show number of customers in each country
+SELECT Country, COUNT(*) AS CustomerCount
+FROM CustomerInfo.Customer
+GROUP BY Country;
