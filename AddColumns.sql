@@ -14,3 +14,16 @@ VALUES ('Shyam', '9876543210', '456 Elm Street');
 
 INSERT INTO CustomerInfo.Customer (CustomerName, Phone, Address)
 VALUES ('Manish', '5555555555', '789 Oak Avenue');
+
+-- Update customer details with new values
+UPDATE CustomerInfo.Customer
+SET Country = 'USA', Salary = 5000.00, Pincode = '12345'
+WHERE CustomerId = 1;
+
+UPDATE CustomerInfo.Customer
+SET Country = 'Canada', Salary = 4000.00, Pincode = '67890'
+WHERE CustomerId = 2;
+
+UPDATE CustomerInfo.Customer
+SET Country = 'UK', Salary = 6000.00, Pincode = '45678'
+WHERE CustomerId = 3;
