@@ -44,3 +44,11 @@ SELECT MAX(Salary) AS MaxSalary,
        SUM(Salary) AS TotalSalary,
        AVG(Salary) AS AvgSalary
 FROM CustomerInfo.Customer;
+
+
+CREATE TABLE OrderTable (
+  OrderID INT PRIMARY KEY,
+  ProductName VARCHAR(100),
+  Quantity INT,
+  Rating INT
+);
