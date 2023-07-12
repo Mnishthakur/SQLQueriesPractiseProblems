@@ -37,3 +37,10 @@ WHERE CustomerName = 'Rahul';
 SELECT Country, COUNT(*) AS CustomerCount
 FROM CustomerInfo.Customer
 GROUP BY Country;
+
+-- Show salary statistics for customers
+SELECT MAX(Salary) AS MaxSalary,
+       MIN(Salary) AS MinSalary,
+       SUM(Salary) AS TotalSalary,
+       AVG(Salary) AS AvgSalary
+FROM CustomerInfo.Customer;
