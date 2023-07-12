@@ -52,3 +52,7 @@ CREATE TABLE OrderTable (
   Quantity INT,
   Rating INT
 );
+
+SELECT c.CustomerName, c.Phone, o.OrderID, o.ProductName, o.Quantity, o.Rating
+FROM CustomerInfo.Customer AS c
+JOIN OrderTable AS o ON c.CustomerId = o.CustomerId;
